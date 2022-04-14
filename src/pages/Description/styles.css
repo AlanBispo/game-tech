@@ -1,0 +1,40 @@
+.description {
+  width: 100%;
+  height: 100%;
+}
+.description-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.title {
+  font-size: 1.5rem;
+  margin: 50px 0px 30px 0px;
+}
+.img {
+  width: 200px;
+  height: 250px;
+  border: none;
+}
+.price {
+  margin-top: 40px;
+}
+.btn-dscpt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 50px;
+  background-color: #017143;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  margin: 40px 0px;
+  cursor: pointer;
+  transition-delay: 100ms;
+}
+.btn-dscpt:hover {
+  opacity: 0.8;
+}
