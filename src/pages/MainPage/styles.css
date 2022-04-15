@@ -75,3 +75,13 @@
     opacity: 0.7;
     transition: all 0.2s;
 }
+
+@media screen and (max-width: 1024px){
+    .elipse{
+        width: 420px;
+        height: 370px;
+    }
+    .propaganda{
+        margin-top: 0px;
+    }
+}

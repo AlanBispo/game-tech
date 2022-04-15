@@ -23,15 +23,15 @@ const Navbarpages = () => {
           <span className="nav-item">Inicio</span>
         </Link>
         <Link to="/shop">
-          <span className="nav-item">Prudutos</span>
+          <span className="nav-item">Produtos</span>
         </Link>
         <Link to="/about">
           <span className="nav-item">Sobre</span>
         </Link>
         <Link to="/cart">
           <span className="nav-item-ico">
-            <MdShoppingCart />
-            {itemsCount > 0 && <div className="count">{itemsCount}</div>}
+            <MdShoppingCart style={{paddingTop: 2}} />
+            {itemsCount > 0 && <span className="count">{itemsCount}</span>}
           </span>
         </Link>
       </div>

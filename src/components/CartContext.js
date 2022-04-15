@@ -5,7 +5,6 @@ export const CartContext = createContext();
 
 export const CartProvider = ({ children }) => {
   const [cart, setCart] = useState({});
-  console.log(cart)
   useEffect(() => {
     const cartLocal = window.localStorage.getItem("cart");
     if (cartLocal) {
@@ -40,8 +39,20 @@ export const CartProvider = ({ children }) => {
       window.localStorage.setItem("cart", JSON.stringify(newCart));
     });
   };
+  const addFromQuantity = (productId) => {
+    const newCart = {};
+    Object.keys(cart).forEach((id) => {
+      if (id !== productId) {
+        newCart[id] = cart[id];
+      } else if (cart[id].quantity >= 1) {
+        newCart[id] = { ...cart[id], quantity: cart[id].quantity + 1 };
+      }
+      setCart(newCart);
+      window.localStorage.setItem("cart", JSON.stringify(newCart));
+    });
+  };
   return (
-    <CartContext.Provider value={{ cart, addToCart, removeFromCart }}>
+    <CartContext.Provider value={{ cart, addToCart, removeFromCart, addFromQuantity }}>
       {children}
     </CartContext.Provider>
   );

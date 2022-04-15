@@ -1,9 +1,10 @@
 /* Esta página foi feita usando a técnica Mobile first, para demonstrar conhecimento sobre. */
 
-.container {
+.container-shop {
   width: 100%;
   min-height: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
 }
 h1{
@@ -21,8 +22,8 @@ h1{
 }
 .show-products {
   background-color: #eee;
-  margin: 30px 10px 0px 10px;
-  height: 270px;
+  margin: 20px 10px 0px 10px;
+  height: 290px;
   width: 170px;
   box-shadow: 4px 4px 6px black;
   border-radius: 10px;
@@ -30,11 +31,17 @@ h1{
 .show-products:hover {
   box-shadow: 4px 4px 10px black;
 }
-.title {
-  font-size: 0.8rem;
+.title-shop {
+  font-size: 1rem;
   color: black;
   cursor: pointer;
   margin-bottom: 5px;
+}
+.title-price {
+  font-size: 1rem;
+  color: black;
+  cursor: pointer;
+  margin-bottom: 10px;
 }
 .btn-shop {
   display: flex;
@@ -70,5 +77,11 @@ img {
   }
   .show-products{
     margin: 30px 10px 0px 40px;
+  }
+  .title-shop{
+    font-size: 1.1rem;
+  }
+  .title-price{
+    font-size: 1.1rem;
   }
 }

@@ -13,6 +13,9 @@
     height: 50px;
     cursor: pointer;
 }
+.nav-items{
+    display: flex;
+}
 .nav-item {
     margin: 20px;
     cursor: pointer;
@@ -23,9 +26,19 @@
     border-bottom: 1px solid black;
 }
 .nav-item-ico{
-    font-size: 18px;  
+    display: flex;
+    font-size: 24px;
+    font-weight: bold;
 }
-@media screen and (max-width: 1000px) {
+.nav-item-ico:hover{
+    border-bottom: 1px solid black;
+}
+.count{
+    position: absolute;
+    font-size: 0.9rem;
+    margin: -13px 0px 0px 20px; 
+}
+@media screen and (max-width: 1024px) {
    .navbar{
        padding: 20px 5px;
    } 
@@ -40,7 +53,36 @@
         height: 50px;
         cursor: pointer;
     }
-    .nav-item-ico{
+    .nav-item{
         padding-top: 10px; 
+    }
+}
+@media screen and (max-width: 321px) {
+    .count{
+        font-size:0.5rem;
+    }
+    .nav-item{
+        font-size: 0.8rem; 
+    }
+    .nav-item-ico{
+
+    }
+}
+@media screen and (max-width: 375px) {
+    .count{
+ 
+    }
+    .nav-item-ico{
+
+    }
+}
+@media screen and (max-width: 425px) {
+    .count{
+
+    }
+}
+@media screen and (max-width: 768px) {
+    .count{
+
     }
 }

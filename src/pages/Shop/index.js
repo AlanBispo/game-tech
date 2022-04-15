@@ -2,7 +2,7 @@
 import { Link } from "react-router-dom";
 
 import products from "../../products.json";
-import Navbarpages from "../../components/Navbar/Navbarpages";
+import Navbarpages from "../../components/Navbar/Navbar";
 import { useProduto } from "../../components/DescriptionContext";
 import { useCart } from "../../components/CartContext";
 
@@ -20,7 +20,8 @@ const Shop = () => {
   };
   
   return (
-    <main className="container">
+    
+    <main className="container-shop">
       <Navbarpages />
       <h1>Todos os jogos</h1>
       <section className="products">
@@ -32,13 +33,13 @@ const Shop = () => {
               <Link to="/description"><img src={product.image} alt={product.name}></img></Link>
               <div className="description">
               <Link to="/description">
-                <div className="title">
+                <div className="title-shop">
                   {titulo.length > 20
                     ? titulo.substring(0, 20) + "..."
                     : titulo}
                 </div>
                 </Link>
-                <div className="title">Valor: R$ {product.price}</div>
+                <div className="title-price">Valor: R$ {product.price}</div>
                 
                 <button
                   className="btn-shop"
