@@ -1,4 +1,6 @@
-import Navbar from '../../components/Navbar/Navbar'
+import { Link } from "react-router-dom";
+
+import Navbar from "../../components/Navbar/Navbar";
 
 import "./styles.css";
 
@@ -16,17 +18,22 @@ const MainPage = () => {
             Para cada estilo gamer que existe, <br /> há um jogo esperando para
             te fazer feliz.
           </h3>
-          <button type="button" className="btn"> Saiba mais</button>
+          <Link to="/about">
+            <button type="button" className="btn">
+              {" "}
+              Saiba mais
+            </button>
+          </Link>
         </div>
-        
 
         <div className="elipse">
           <div className="text-elipse">
-            <h3>
-              Cansado de preços abusivos? Confira nossos jogos e
-              cupons!
-            </h3>
-            
+            <h3>Cansado de preços abusivos? Confira nossos jogos e cupons!</h3>
+            <Link to="/shop">
+              <button type="button" className="btn-main">
+                Ver produtos
+              </button>
+            </Link>
           </div>
         </div>
       </section>

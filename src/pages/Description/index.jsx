@@ -16,24 +16,34 @@ const Description = () => {
   const games = produto.produto;
 
   const handleClick = () =>
-    showToast({ type: "success", message: "Adicionado com sucesso" });
+    showToast({ type: "success", message: "Produto adicionado ao carrinho" });
 
   return (
     <main className="container">
       <Navbarpages />
+      
       <ToastAnimated />
       <section className="description">
+      <div
+        className="arrow-lleft"
+        onClick={() => {
+          window.history.back();
+        }}
+      >
+        <MdKeyboardBackspace />
+      </div>
         <div className="description-item">
           <h1 className="title">{games.name}</h1>
           <img className="img" src={games.image} alt={games.name} />
-          <span className="price">Preço: R$ {games.price}</span>
-          <div onClick={handleClick}> 
-             <button className="btn-dscpt" onClick={add(produto.produto)}>
-            Adicionar ao Carrinho
-            <MdShoppingCart size={18} />
-          </button>
+          <span className="price">Valor: R$ {games.price}</span>
+          <span className="price">Pontuação: {games.score}</span>
+          <span className="descricao">{games.description}</span>
+          <div onClick={handleClick}>
+            <button className="btn-dscpt" onClick={add(produto.produto)}>
+              Adicionar ao Carrinho
+              <MdShoppingCart size={18} />
+            </button>
           </div>
-         
         </div>
       </section>
     </main>

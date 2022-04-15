@@ -1,0 +1,22 @@
+.container-about{
+    display: flex;
+    flex-direction: column;
+}
+.description-about{
+    margin-left: 30px;
+}
+.description-about h2{
+    margin: 20px 0px;
+    font-size: 1.8rem;
+}
+.description-about p{
+    margin: 5px 0px;
+    font-size: 1.2rem;
+}
+.description-about h4{
+    margin: 5px 0px;
+    font-size: 1.3rem;
+}
+.description-about h2 span{
+    color: #015a36;
+}

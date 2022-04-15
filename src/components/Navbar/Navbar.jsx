@@ -14,9 +14,11 @@ const Navbarpages = () => {
   );
   return (
     <header className="navbar">
+      
       <div className="logo">
-        <img src={Logo} alt="Logo" className="logo-img" />
+      <Link to="/"><img src={Logo} alt="Logo" className="logo-img" /></Link>
       </div>
+      
 
       <div className="nav-items">
         <Link to="/">

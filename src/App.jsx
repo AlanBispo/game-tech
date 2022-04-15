@@ -4,6 +4,7 @@ import MainPage from "./pages/MainPage";
 import Shop from "./pages/Shop";
 import Description from "./pages/Description";
 import Cart from "./pages/Cart";
+import About from "./pages/About";
 
 import { CartProvider } from './components/CartContext'
 import { DescriptionProvider } from './components/DescriptionContext'
@@ -20,6 +21,7 @@ const App = () => {
             <Route path="/shop" element={<Shop />} />
             <Route path="/description" element={<Description />} />
             <Route path="/cart" element={<Cart />} />
+            <Route path="/about" element={<About />} />
           </Routes>
         </Router>
       </DescriptionProvider>

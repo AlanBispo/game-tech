@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import Cupons from "../../resources/cupons.json";
 import { useCart } from "../../components/CartContext";
@@ -11,7 +11,6 @@ import { FaPlus, FaMinus } from "react-icons/fa";
 import "./styles.css";
 
 const Cart = () => {
-  const navigate = useNavigate();
   const [cupom, setCupom] = useState("");
   const cart = useCart();
   const remove = (id) => () => {
@@ -26,7 +25,6 @@ const Cart = () => {
   Object.keys(cart.cart).map((key) => {
     const product = cart.cart[key];
     const price = product.price;
-    console.log(price);
     subTotal += price * product.quantity;
     id = product.id;
     return subTotal;
@@ -48,7 +46,6 @@ const Cart = () => {
     showToast({ type: "success", message: "Pedido finalizado com sucesso" });
 
   return (
-    
       <main className="container-cart">
         <Navbarpages />
         <section className="cart">
@@ -63,7 +60,7 @@ const Cart = () => {
           {id === 0 ? (
             <div className="vazio">
               <h2>Oops...! Seu carrinho está vazio!</h2>
-              <button className="btn-vazio">Produtos</button>
+              <Link to="/shop"><button className="btn-vazio">Confira nossos jogos!</button></Link>
             </div>
           ) : (
             <>
@@ -89,7 +86,7 @@ const Cart = () => {
                       </div>
                       <span className="quantity">
                         <FaMinus className="btn-cart" onClick={remove(key)} />
-                        {product.quantity}
+                        <span>{product.quantity}</span>
                         <FaPlus className="btn-cart" onClick={add(key)} />
                       </span>
                       <span className="quantity">
