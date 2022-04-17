@@ -1,5 +1,5 @@
 #  
-[![NPM](https://img.shields.io/npm/l/react)](https://github.com/AlanBispo/desafio-marvel/blob/main/LICENSE) 
+[![NPM](https://img.shields.io/npm/l/react)](https://github.com/AlanBispo/game-tech/blob/main/LICENSE) 
 
 # Sobre o projeto
 
