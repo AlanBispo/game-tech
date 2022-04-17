@@ -1,0 +1,77 @@
+/* Esta página foi feita usando a técnica Mobile first, para demonstrar conhecimento sobre. */
+
+.products {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+  .show-products {
+    background-color: #eee;
+    margin: 20px 10px 0px 10px;
+    height: 290px;
+    width: 170px;
+    box-shadow: 4px 4px 6px black;
+    border-radius: 10px;
+  }
+  .show-products:hover {
+    box-shadow: 4px 4px 10px black;
+  }
+  .title-shop {
+    font-size: 1rem;
+    color: black;
+    cursor: pointer;
+    margin-bottom: 5px;
+  }
+  .title-price {
+    font-size: 1rem;
+    color: black;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  .btn-shop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 155px;
+    height: 24px;
+    background-color: #017143;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition-delay: 100ms;
+    margin-left: 8px;
+  }
+  .btn-shop:hover {
+    opacity: 0.8;
+  }
+  img {
+    height: 180px;
+    width: 170px;
+    cursor: pointer;
+    color: transparent;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  @media screen and (min-width: 1000px) {
+    .products {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+    .show-products{
+      margin: 30px 10px 0px 40px;
+    }
+    .title-shop{
+      font-size: 1.1rem;
+    }
+    .title-price{
+      font-size: 1.1rem;
+    }
+  }

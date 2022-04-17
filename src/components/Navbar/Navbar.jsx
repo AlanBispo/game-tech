@@ -18,8 +18,6 @@ const Navbarpages = () => {
       <div className="logo">
       <Link to="/"><img src={Logo} alt="Logo" className="logo-img" /></Link>
       </div>
-      
-
       <div className="nav-items">
         <Link to="/">
           <span className="nav-item">Inicio</span>

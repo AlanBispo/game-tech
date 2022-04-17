@@ -18,7 +18,7 @@
     {
       "id": 102,
       "name": "The Witcher III Wild Hunt",
-      "price": 119.5,
+      "price": 119.59,
       "score": 250,
       "image": "https://i.imgur.com/gJldpku.png",
       "description": "The Witcher 3: Wild Hunt é um jogo eletrônico de RPG de ação em mundo aberto desenvolvido pela CD Projekt RED e lançado no dia 19 de maio de 2015 para as plataformas Microsoft Windows, PlayStation 4, Xbox One e em outubro de 2019 para o Nintendo Switch, sendo o terceiro título da série de jogos The Witcher."
@@ -66,9 +66,33 @@
     {
       "id": 501,
       "name": "Horizon Zero Dawn",
-      "price": 115.8,
+      "price": 115.89,
       "score": 290,
       "image": "https://i.imgur.com/t6QrKhr.png",
       "description": "Horizon Zero Dawn é um jogo eletrônico de RPG de ação desenvolvido pela Guerrilla Games e publicado pela Sony Interactive Entertainment. Foi lançado em 28 de fevereiro de 2017 para PlayStation 4 e em 7 de agosto de 2020 para Microsoft Windows."
+    },
+    {
+      "id": 432,
+      "name": "Spider Man",
+      "price": 127.99,
+      "score": 850,
+      "image": "https://i.imgur.com/Rv1IE0K.jpg",
+      "description": "Spider-Man é um jogo eletrônico de ação-aventura desenvolvido pela Insomniac Games e publicado pela Sony Interactive Entertainment."
+    },
+    {
+      "id": 69,
+      "name": "Spider Man Miles Morales",
+      "price": 142.39,
+      "score": 750,
+      "image": "https://i.imgur.com/XsOh9wS.jpg",
+      "description": "Spider-Man: Miles Morales é um jogo eletrônico de ação-aventura desenvolvido pela Insomniac Games e publicado pela Sony Interactive Entertainment para o PlayStation 4 e PlayStation 5."
+    }, 
+    {
+      "id": 649,
+      "name": "Fracry 6",
+      "price": 184.65,
+      "score": 760,
+      "image": "https://i.imgur.com/yMQOBLR.jpg",
+      "description": "Far Cry 6 é um jogo eletrônico de tiro em primeira pessoa desenvolvido pela Ubisoft Toronto e publicado pela Ubisoft. É o sexto título principal da série Far Cry e foi lançado em 7 de outubro de 2021 para Amazon Luna, Google Stadia, Microsoft Windows, PlayStation 4, PlayStation 5, Xbox One e Xbox Series X/S."
     }
   ]

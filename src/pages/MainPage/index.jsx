@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 
 import Navbar from "../../components/Navbar/Navbar";
+import Elipse from "../../components/Elipse";
 
 import "./styles.css";
 
@@ -8,7 +9,6 @@ const MainPage = () => {
   return (
     <main className="container">
       <Navbar />
-
       <section className="info-page">
         <div className="propaganda">
           <h2>
@@ -25,17 +25,8 @@ const MainPage = () => {
             </button>
           </Link>
         </div>
+        <Elipse />
 
-        <div className="elipse">
-          <div className="text-elipse">
-            <h3>Cansado de preços abusivos? Confira nossos jogos e cupons!</h3>
-            <Link to="/shop">
-              <button type="button" className="btn-main">
-                Ver produtos
-              </button>
-            </Link>
-          </div>
-        </div>
       </section>
     </main>
   );

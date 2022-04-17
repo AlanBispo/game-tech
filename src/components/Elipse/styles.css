@@ -1,0 +1,39 @@
+.elipse{
+    border-radius: 100% 0% 0% 0%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 530px;
+    height: 450px;
+    background-color: #017143;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.text-elipse{
+    display: flex;
+    width: 290px;
+    flex-wrap: wrap;
+    font-size: 1.1rem;
+    margin-right: 30px;
+    justify-content:center;
+    color: #eee;
+}
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 85px;
+    height: 30px;
+    border-radius: 8px;
+    border: none;
+    background-color: #015a36;
+    cursor: pointer;
+    color:white;
+    font-size: 0.9rem;
+    font-weight: bold;
+    transition: all 0.8s;
+}
+.btn:hover{
+    opacity: 0.7
+}

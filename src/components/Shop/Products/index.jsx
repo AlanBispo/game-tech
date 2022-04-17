@@ -1,33 +1,27 @@
 /* Esta página foi feita usando a técnica Mobile first, para demonstrar conhecimento sobre. */
+
 import { Link } from "react-router-dom";
 
-import products from "../../products.json";
-import Navbarpages from "../../components/Navbar/Navbar";
-import { useProduto } from "../../components/DescriptionContext";
-import { useCart } from "../../components/CartContext";
+import products from "../../../products.json";
+import { useProduto } from "../../DescriptionContext";
+import { useCart } from "../../CartContext";
 
 import { MdShoppingCart } from "react-icons/md";
-import "./styles.css";
+import "./styles.css"
 
-const Shop = () => {
-  const produto = useProduto();
-  const list = (product) => () => {
-    produto.addToDescription(product);
-  };
-  const cart = useCart();
-  const add = (product) => () => {
+const Products = () => {
+    const produto = useProduto();
+    const list = (product) => () => {
+        produto.addToDescription(product);
+    };
+    const cart = useCart();
+    const add = (product) => () => {
     cart.addToCart(product);
   };
-  
-  return (
-    
-    <main className="container-shop">
-      <Navbarpages />
-      <h1>Todos os jogos</h1>
-      <section className="products">
+    return(
+        <section className="products">
         {products.map((product) => {
           const titulo = product.name;
-          
           return (
             <div className="show-products" onClick={list(product)} key={product.id}>
               <Link to="/description"><img src={product.image} alt={product.name}></img></Link>
@@ -40,7 +34,6 @@ const Shop = () => {
                 </div>
                 </Link>
                 <div className="title-price">Valor: R$ {product.price}</div>
-                
                 <button
                   className="btn-shop"
                   onClick={list(product) && add(product)}
@@ -53,8 +46,7 @@ const Shop = () => {
           );
         })}
       </section>
-    </main>
-  );
-};
+    );
+}
 
-export default Shop;
+export default Products;
